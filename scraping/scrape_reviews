@@ -1,0 +1,545 @@
+"""
+scrape_reviews.py — STEP 2: Scrape reviews from both platforms.
+
+Reads master_hotels.csv (output of hotel_seeds.py) and for each hotel,
+scrapes all reviews from both Agoda and Booking.com.
+
+Output: data/raw/reviews_raw.csv
+
+IMPORTANT NOTES:
+- Run with headless=False first to monitor for CAPTCHAs
+- If blocked: wait 30min, change your IP (mobile hotspot), try again
+- Script saves progress after every hotel — safe to resume if interrupted
+- Expected runtime: 8-12 hours for 200 hotels (be patient)
+"""
+
+import csv
+import json
+import os
+import sys
+import time
+import random
+from datetime import datetime
+
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import (
+    TimeoutException, NoSuchElementException, StaleElementReferenceException
+)
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.browser import get_driver, human_delay, scroll_slowly
+
+
+# ── CONFIG ──────────────────────────────────────────────────────────────────
+HOTELS_CSV      = "data/hotels_master.csv"
+OUTPUT_CSV      = "data/raw/reviews_raw.csv"
+PROGRESS_FILE   = "data/raw/.scrape_progress.json"  # tracks completed hotels
+MAX_REVIEWS     = 100     # per hotel per platform (enough for analysis)
+HEADLESS        = False   # set True for overnight runs after testing
+# ────────────────────────────────────────────────────────────────────────────
+
+
+REVIEW_FIELDS = [
+    "hotel_id", "hotel_name", "city", "tier",
+    "platform",             # "Agoda" or "Booking"
+    "reviewer_nationality",
+    "trip_type",            # Solo / Couple / Family / Business
+    "review_score",         # 0-10
+    "review_date",
+    "review_text_positive",
+    "review_text_negative",
+    "room_type",
+    "length_of_stay",
+]
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# AGODA SCRAPER
+# ══════════════════════════════════════════════════════════════════════════════
+
+def scrape_agoda_reviews(driver, hotel):
+    """
+    Scrapes reviews from an Agoda hotel page.
+    Agoda loads reviews dynamically — we scroll and click "load more".
+    """
+    reviews = []
+    url = hotel["agoda_url"]
+
+    if not url:
+        print(f"  [Agoda] No URL for {hotel['hotel_name']}, skipping")
+        return reviews
+
+    # Agoda review tab is usually accessible via #tab-reviews anchor
+    review_url = url.rstrip("/") + "#tab-reviews"
+    print(f"  [Agoda] {hotel['hotel_name']} → {review_url[:60]}...")
+
+    try:
+        driver.get(review_url)
+        human_delay(4, 7)
+        scroll_slowly(driver, pause=0.8)
+        human_delay(2, 4)
+
+        # ── Click the Reviews tab if not already active ──────────────────
+        try:
+            review_tab = WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable((
+                    By.CSS_SELECTOR,
+                    "a[href*='#tab-reviews'], [data-element-name='tab-reviews'], "
+                    "button[class*='review-tab']"
+                ))
+            )
+            driver.execute_script("arguments[0].click();", review_tab)
+            human_delay(2, 4)
+        except TimeoutException:
+            pass  # Reviews may already be visible
+
+        # ── Get overall score ─────────────────────────────────────────────
+        try:
+            overall_score = driver.find_element(
+                By.CSS_SELECTOR,
+                "[data-selenium='review-score'], .ReviewSection__OverallScore, "
+                "[class*='overall-score'], .score-text"
+            ).text.strip()
+        except NoSuchElementException:
+            overall_score = ""
+
+        # ── Scrape individual reviews ─────────────────────────────────────
+        page_num = 1
+        while len(reviews) < MAX_REVIEWS:
+            scroll_slowly(driver, pause=0.6)
+
+            # Find review containers
+            review_cards = driver.find_elements(
+                By.CSS_SELECTOR,
+                "[data-selenium='review-item'], .Review-comment, "
+                "[class*='review-item'], [class*='ReviewItem']"
+            )
+
+            if not review_cards:
+                break
+
+            new_reviews_this_page = 0
+            for card in review_cards:
+                try:
+                    # Score
+                    try:
+                        score_el = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[class*='score'], [class*='rating'], span[class*='Score']"
+                        )
+                        score = score_el.text.strip()
+                    except NoSuchElementException:
+                        score = overall_score
+
+                    # Nationality + trip type
+                    try:
+                        reviewer_info = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[class*='reviewer-info'], [class*='ReviewerInfo'], "
+                            "[data-selenium='reviewer-info']"
+                        ).text
+                        # Usually formatted as "United Kingdom | Couple · 3 nights"
+                        parts = reviewer_info.split("|")
+                        nationality = parts[0].strip() if parts else ""
+                        trip_info = parts[1].strip() if len(parts) > 1 else ""
+                    except NoSuchElementException:
+                        nationality = ""
+                        trip_info = ""
+
+                    # Parse trip type from trip_info
+                    trip_type = ""
+                    for t in ["Solo", "Couple", "Family", "Business", "Group"]:
+                        if t.lower() in trip_info.lower():
+                            trip_type = t
+                            break
+
+                    # Length of stay
+                    length_of_stay = ""
+                    if "night" in trip_info.lower():
+                        for word in trip_info.split():
+                            if word.isdigit():
+                                length_of_stay = f"{word} nights"
+                                break
+
+                    # Review text
+                    try:
+                        pos_text = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[data-selenium='review-positive'], "
+                            "[class*='positive'], [class*='Positive']"
+                        ).text.strip()
+                    except NoSuchElementException:
+                        pos_text = ""
+
+                    try:
+                        neg_text = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[data-selenium='review-negative'], "
+                            "[class*='negative'], [class*='Negative']"
+                        ).text.strip()
+                    except NoSuchElementException:
+                        neg_text = card.text.strip()  # fallback: full text
+
+                    # Date
+                    try:
+                        date_el = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[class*='date'], [class*='Date'], time"
+                        )
+                        review_date = date_el.text.strip() or date_el.get_attribute("datetime")
+                    except NoSuchElementException:
+                        review_date = ""
+
+                    # Room type
+                    try:
+                        room_el = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[class*='room-type'], [class*='RoomType']"
+                        )
+                        room_type = room_el.text.strip()
+                    except NoSuchElementException:
+                        room_type = ""
+
+                    if score or pos_text or neg_text:
+                        reviews.append({
+                            "hotel_id": hotel["hotel_id"],
+                            "hotel_name": hotel["hotel_name"],
+                            "city": hotel["city"],
+                            "tier": hotel["tier_guess"],
+                            "platform": "Agoda",
+                            "reviewer_nationality": nationality,
+                            "trip_type": trip_type,
+                            "review_score": score,
+                            "review_date": review_date,
+                            "review_text_positive": pos_text,
+                            "review_text_negative": neg_text,
+                            "room_type": room_type,
+                            "length_of_stay": length_of_stay,
+                        })
+                        new_reviews_this_page += 1
+
+                except StaleElementReferenceException:
+                    continue
+                except Exception as e:
+                    continue
+
+                if len(reviews) >= MAX_REVIEWS:
+                    break
+
+            if new_reviews_this_page == 0:
+                break
+
+            # ── Try to go to next review page ─────────────────────────────
+            try:
+                next_btn = driver.find_element(
+                    By.CSS_SELECTOR,
+                    "[data-selenium='review-next-page'], "
+                    "button[class*='next'], a[class*='next-page']"
+                )
+                if next_btn.is_enabled():
+                    driver.execute_script("arguments[0].click();", next_btn)
+                    page_num += 1
+                    human_delay(3, 5)
+                else:
+                    break
+            except NoSuchElementException:
+                break
+
+    except Exception as e:
+        print(f"  [Agoda] Error: {e}")
+
+    print(f"  [Agoda] → {len(reviews)} reviews collected")
+    return reviews
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# BOOKING.COM SCRAPER
+# ══════════════════════════════════════════════════════════════════════════════
+
+def scrape_booking_reviews(driver, hotel):
+    """
+    Scrapes reviews from a Booking.com hotel page.
+    Booking.com has a dedicated reviews page: /reviewlist.html
+    """
+    reviews = []
+    url = hotel.get("booking_url", "")
+
+    if not url:
+        print(f"  [Booking] No URL for {hotel['hotel_name']}, skipping")
+        return reviews
+
+    # Convert hotel page URL to review list URL
+    if "reviewlist.html" not in url:
+        # Booking.com review pages follow this pattern
+        base = url.split("?")[0].rstrip("/")
+        review_url = base + ".html?activeTab=main#tab-reviews"
+    else:
+        review_url = url
+
+    print(f"  [Booking] {hotel['hotel_name']} → {review_url[:60]}...")
+
+    try:
+        driver.get(review_url)
+        human_delay(4, 7)
+        scroll_slowly(driver, pause=0.8)
+
+        page_num = 1
+        while len(reviews) < MAX_REVIEWS:
+            scroll_slowly(driver, pause=0.6)
+            human_delay(1, 2)
+
+            # Find review containers
+            review_cards = driver.find_elements(
+                By.CSS_SELECTOR,
+                "[data-testid='review-card'], .c-review-block, "
+                "[class*='review-block'], [class*='ReviewBlock']"
+            )
+
+            if not review_cards:
+                # Try alternative selectors
+                review_cards = driver.find_elements(
+                    By.CSS_SELECTOR, "li[class*='review']"
+                )
+
+            if not review_cards:
+                break
+
+            new_this_page = 0
+            for card in review_cards:
+                try:
+                    # Score
+                    try:
+                        score_el = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[data-testid='review-score'], "
+                            ".bui-review-score__badge, [class*='score']"
+                        )
+                        score = score_el.text.strip()
+                    except NoSuchElementException:
+                        score = ""
+
+                    # Reviewer info — Booking shows: "Flag United Kingdom | Solo traveller"
+                    try:
+                        reviewer_block = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[data-testid='reviewer-info'], "
+                            ".c-review-block__row--reviewer, [class*='reviewer']"
+                        ).text
+                        lines = [l.strip() for l in reviewer_block.split('\n') if l.strip()]
+                        nationality = lines[0] if lines else ""
+                        trip_type_raw = lines[1] if len(lines) > 1 else ""
+                    except NoSuchElementException:
+                        nationality = ""
+                        trip_type_raw = ""
+
+                    # Parse trip type
+                    trip_type = ""
+                    for t in ["Solo", "Couple", "Family", "Business", "Group"]:
+                        if t.lower() in trip_type_raw.lower():
+                            trip_type = t
+                            break
+
+                    # Positive review
+                    try:
+                        pos_text = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[data-testid='review-positive-text'], "
+                            ".c-review__body--positive, [class*='positive']"
+                        ).text.strip()
+                    except NoSuchElementException:
+                        pos_text = ""
+
+                    # Negative review
+                    try:
+                        neg_text = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[data-testid='review-negative-text'], "
+                            ".c-review__body--negative, [class*='negative']"
+                        ).text.strip()
+                    except NoSuchElementException:
+                        neg_text = ""
+
+                    # Date
+                    try:
+                        date_el = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[data-testid='review-date'], "
+                            ".c-review-block__date, time"
+                        )
+                        review_date = date_el.text.strip()
+                    except NoSuchElementException:
+                        review_date = ""
+
+                    # Room type & stay duration
+                    try:
+                        stay_info = card.find_element(
+                            By.CSS_SELECTOR,
+                            "[data-testid='stay-info'], .c-review-block__stay-date, "
+                            "[class*='stay-date']"
+                        ).text
+                        # Format: "Deluxe Room | 3 nights | April 2024"
+                        parts = stay_info.split("|")
+                        room_type = parts[0].strip() if parts else ""
+                        length_of_stay = parts[1].strip() if len(parts) > 1 else ""
+                    except NoSuchElementException:
+                        room_type = ""
+                        length_of_stay = ""
+
+                    if score or pos_text or neg_text:
+                        reviews.append({
+                            "hotel_id": hotel["hotel_id"],
+                            "hotel_name": hotel["hotel_name"],
+                            "city": hotel["city"],
+                            "tier": hotel["tier_guess"],
+                            "platform": "Booking",
+                            "reviewer_nationality": nationality,
+                            "trip_type": trip_type,
+                            "review_score": score,
+                            "review_date": review_date,
+                            "review_text_positive": pos_text,
+                            "review_text_negative": neg_text,
+                            "room_type": room_type,
+                            "length_of_stay": length_of_stay,
+                        })
+                        new_this_page += 1
+
+                except StaleElementReferenceException:
+                    continue
+                except Exception:
+                    continue
+
+                if len(reviews) >= MAX_REVIEWS:
+                    break
+
+            if new_this_page == 0:
+                break
+
+            # ── Next page ──────────────────────────────────────────────────
+            try:
+                next_btn = driver.find_element(
+                    By.CSS_SELECTOR,
+                    "[data-testid='pagination-next'], "
+                    "button[class*='next'], a[aria-label*='Next']"
+                )
+                if next_btn.is_enabled():
+                    driver.execute_script("arguments[0].click();", next_btn)
+                    page_num += 1
+                    human_delay(3, 5)
+                else:
+                    break
+            except NoSuchElementException:
+                break
+
+    except Exception as e:
+        print(f"  [Booking] Error: {e}")
+
+    print(f"  [Booking] → {len(reviews)} reviews collected")
+    return reviews
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# MAIN ORCHESTRATOR
+# ══════════════════════════════════════════════════════════════════════════════
+
+def load_progress():
+    if os.path.exists(PROGRESS_FILE):
+        with open(PROGRESS_FILE) as f:
+            return json.load(f)
+    return {"completed_hotel_ids": []}
+
+
+def save_progress(completed_ids):
+    os.makedirs(os.path.dirname(PROGRESS_FILE), exist_ok=True)
+    with open(PROGRESS_FILE, "w") as f:
+        json.dump({"completed_hotel_ids": completed_ids}, f)
+
+
+def append_reviews_to_csv(reviews, filepath):
+    """Appends reviews to CSV — safe to call multiple times."""
+    os.makedirs(os.path.dirname(filepath), exist_ok=True)
+    file_exists = os.path.exists(filepath)
+
+    with open(filepath, "a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=REVIEW_FIELDS)
+        if not file_exists:
+            writer.writeheader()
+        writer.writerows(reviews)
+
+
+def load_hotels(filepath):
+    hotels = []
+    with open(filepath, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            hotels.append(row)
+    return hotels
+
+
+def main():
+    print("=" * 60)
+    print("STEP 2: Scraping reviews from Agoda + Booking.com")
+    print("=" * 60)
+
+    if not os.path.exists(HOTELS_CSV):
+        print(f"❌ {HOTELS_CSV} not found. Run hotel_seeds.py first.")
+        sys.exit(1)
+
+    hotels = load_hotels(HOTELS_CSV)
+    progress = load_progress()
+    completed = progress["completed_hotel_ids"]
+
+    pending = [h for h in hotels if h["hotel_id"] not in completed]
+    print(f"\nTotal hotels: {len(hotels)}")
+    print(f"Already done: {len(completed)}")
+    print(f"Remaining:    {len(pending)}")
+    print("\n⚠️  Watch the browser. Solve any CAPTCHAs manually.\n")
+
+    driver = get_driver(headless=HEADLESS)
+
+    try:
+        for i, hotel in enumerate(pending, 1):
+            print(f"\n[{i}/{len(pending)}] {hotel['hotel_name']} — {hotel['city']}")
+
+            all_reviews = []
+
+            # Scrape Agoda
+            agoda_reviews = scrape_agoda_reviews(driver, hotel)
+            all_reviews.extend(agoda_reviews)
+
+            # Be human between platforms
+            human_delay(5, 10)
+
+            # Scrape Booking.com
+            booking_reviews = scrape_booking_reviews(driver, hotel)
+            all_reviews.extend(booking_reviews)
+
+            # Save immediately (don't lose progress)
+            if all_reviews:
+                append_reviews_to_csv(all_reviews, OUTPUT_CSV)
+
+            completed.append(hotel["hotel_id"])
+            save_progress(completed)
+
+            print(f"  ✅ Saved {len(all_reviews)} reviews. Progress: {len(completed)}/{len(hotels)}")
+
+            # Longer break every 10 hotels to avoid rate limiting
+            if i % 10 == 0:
+                wait = random.uniform(30, 60)
+                print(f"\n  💤 Taking a {wait:.0f}s break (every 10 hotels)...\n")
+                time.sleep(wait)
+            else:
+                human_delay(8, 15)
+
+    except KeyboardInterrupt:
+        print("\n\nInterrupted. Progress saved — safe to resume.")
+    finally:
+        driver.quit()
+
+    print(f"\n✅ Done. Reviews saved to: {OUTPUT_CSV}")
+    print("Next step: python scrapers/clean_data.py")
+
+
+if __name__ == "__main__":
+    main()
