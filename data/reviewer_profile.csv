@@ -1,0 +1,7 @@
+city,platform,n_reviews,avg_score,pct_asian,pct_couple,pct_solo,pct_family,pct_business,avg_stay_nights,score_std
+Bali,Agoda,83,8.99,69.9,53.0,12.0,22.9,7.2,2.2,1.42
+Bali,Booking.com,17,9.59,0.0,41.2,0.0,52.9,0.0,0.0,0.71
+Singapore,Agoda,50,9.68,62.0,48.0,8.0,28.0,0.0,1.5,0.66
+Singapore,Booking.com,50,9.2,0.0,48.0,8.0,30.0,4.0,0.0,1.74
+Tokyo,Agoda,89,8.97,49.4,46.1,16.9,13.5,14.6,2.2,1.23
+Tokyo,Booking.com,11,8.64,0.0,27.3,27.3,36.4,0.0,0.0,1.8
