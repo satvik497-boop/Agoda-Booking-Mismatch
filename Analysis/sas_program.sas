@@ -3,7 +3,7 @@
    H1: Sampling Bias | H2: Prompt Bias | Baseline Gap
    ═══════════════════════════════════════════════════════════ */
 
-/* ── IMPORT ALL 4 FILES ── */
+/* ── IMPORTING FILES ── */
 proc import datafile="C:\Users\Satvik Mishra\Desktop\project 2\output\hotel_summary.csv"
     out=hotel_summary dbms=csv replace; getnames=yes; run;
 
@@ -78,7 +78,7 @@ proc means data=reviews_prep mean std var min max;
     title "H2: Score Distribution Statistics by Platform";
 run;
 
-/* ── RISK SEGMENTATION (BA Layer) ── */
+/* ── RISK SEGMENTATION ── */
 data hotel_risk;
     set hotel_summary;
     if score_gap <= -0.4 then risk_tier = "At-Risk";
