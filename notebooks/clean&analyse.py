@@ -12,8 +12,8 @@ import pandas as pd
 import numpy as np
 import os
 
-# ── CONFIG ──────────────────────────────────────────────────────
-DATA_DIR = "."   # folder where your CSVs are
+# ── CONFIG ────────
+DATA_DIR = "." 
 OUT_DIR  = "output"
 os.makedirs(OUT_DIR, exist_ok=True)
 
@@ -38,7 +38,7 @@ ASIAN_COUNTRIES = {
     "Taiwan", "Hong Kong", "Cambodia", "Myanmar", "Bangladesh"
 }
 
-# ── STEP 1: BUILD REVIEW-LEVEL DATASET ──────────────────────────
+# ── STEP 1: BUILDING REVIEW-LEVEL DATASET ──────────────────────────
 
 all_reviews = []
 
