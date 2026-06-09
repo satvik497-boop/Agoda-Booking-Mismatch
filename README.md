@@ -1,13 +1,13 @@
 # The Trust Deficit — Agoda vs Booking.com Review Score Analysis
 
 > Why do identical hotels score 0.3–0.5 points lower on Agoda than 
-> Booking.com — and what should Agoda do about it?
+> Booking.com; and what should Agoda do about it?
 
 ## Key Findings
 
 - Gap is statistically significant: mean = −0.40, p = 0.020, t = −6.93
 - Primary driver is **sampling bias (H1)**: Agoda reviewers are 60.4% 
-  Asian vs. 0% on Booking.com for the same hotels — directly explaining 
+  Asian vs. 0% on Booking.com for the same hotels, directly explaining 
   the two largest sub-score gaps (Location: −0.60, Room Comfort: −0.53)
 - BA revenue model: 2 At-Risk hotels × $3,456/year = **$6,912 annual 
   GMV at risk** from supplier allocation reduction
