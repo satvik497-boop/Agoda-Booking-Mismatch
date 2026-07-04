@@ -1,0 +1,601 @@
+city,hotel_name,tier,platform,score,nationality,trip_type,room_type,stay_nights,source_file,agoda_agg_score,booking_agg_score,is_asian_reviewer,is_solo,score_gap,nationality_known
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,South Korea,Couple,One-Bedroom Duplex Suite,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Japan,Couple,1 Bedroom Villa,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,South Korea,Couple,One-Bedroom Duplex Suite,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.6,Saudi Arabia,Couple,One Bedroom Villa (2 Queen Beds),3,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.2,China,Couple,One-Bedroom Duplex Suite,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Group,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,China,Solo traveler,Sayan Villa,2,bali_a,9.1,9.6,1.0,1,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,South Korea,Couple,One Bedroom Villa (1 King Size Bed),1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Vietnam,Family with young children,One Bedroom Duplex Suite (1 King Size Bed),3,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.8,South Korea,Solo traveler,Family Suite with 1 King Size Bed and 2 Twin Beds,2,bali_a,9.1,9.6,1.0,1,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,8.0,Unknown,Family with young children,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,South Korea,Couple,One Bedroom Villa (1 King Size Bed),2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,9.0,Unknown,Couple,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,South Korea,Couple,One Bedroom Villa (1 King Size Bed),2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.2,South Korea,Couple,One Bedroom Villa (1 King Size Bed),1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Singapore,Solo traveler,One Bedroom Villa (2 Queen Beds),3,bali_a,9.1,9.6,1.0,1,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Türkiye,Couple,One Bedroom Villa (1 King Size Bed),3,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,2.0,Indonesia,Couple,One Bedroom Duplex Suite (1 King Size Bed),1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,9.0,Unknown,Couple,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Indonesia,Family with young children,One Bedroom Duplex Suite (1 King Size Bed),2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,9.0,Unknown,Family with young children,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.6,Indonesia,Family with young children,One Bedroom Villa (2 Queen Beds),2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Booking.com,8.0,Unknown,Family with young children,Unknown,0,bali_a,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Indonesia,Couple,Riverfront One Bedroom Villa (1 King Size Bed),2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Indonesia,Couple,One Bedroom Villa (1 King Size Bed),2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Thailand,Solo traveler,One Bedroom Duplex Suite (1 King Size Bed),1,bali_a,9.1,9.6,1.0,1,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Malaysia,Solo traveler,One Bedroom Duplex Suite (1 King Size Bed),1,bali_a,9.1,9.6,1.0,1,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.2,Indonesia,Family with young children,Family Suite with 1 King Size Bed and 2 Twin Beds,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,"Hong Kong SAR, China",Couple,One Bedroom Duplex Suite (1 King Size Bed),2,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Thailand,Couple,One Bedroom Duplex Suite (1 King Size Bed),1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.2,Singapore,Couple,One Bedroom Duplex Suite (1 King Size Bed),3,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.2,Italy,Couple,Unknown,5,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Singapore,Group,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.3,Brazil,Family with young children,Unknown,5,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,India,Couple,Unknown,4,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,South Korea,Couple,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Philippines,Couple,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.3,Thailand,Couple,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,United States,Business traveler,Unknown,6,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.3,"Hong Kong SAR, China",Family with young children,Unknown,3,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,"Hong Kong SAR, China",Family with young children,Unknown,1,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,6.0,Singapore,Business traveler,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,7.7,Malaysia,Couple,Unknown,3,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.3,South Africa,Couple,Unknown,2,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Canada,Solo traveler,Unknown,2,bali_a,9.1,9.6,0.0,1,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.7,Indonesia,Group,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.0,Saudi Arabia,Family with young children,Unknown,4,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.3,Australia,Couple,Unknown,4,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,7.0,Singapore,Solo traveler,Unknown,2,bali_a,9.1,9.6,1.0,1,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,France,Couple,Unknown,3,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Singapore,Couple,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.3,Switzerland,Couple,Unknown,1,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,7.7,Singapore,Couple,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.3,United States,Couple,Unknown,2,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Japan,Couple,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Netherlands,Couple,Unknown,1,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Japan,Family with young children,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.0,United States,Family with young children,Unknown,3,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.0,France,Couple,Unknown,3,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Belgium,Couple,Unknown,3,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Switzerland,Solo traveler,One-Bedroom Duplex Suite,7,bali_a,9.1,9.6,0.0,1,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Switzerland,Solo traveler,ONE BEDROOM DUPLEX SUITE KING DOUBLE TERRACES UPPER LEVEL LIVING ROOM,8,bali_a,9.1,9.6,0.0,1,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Netherlands,Couple,One-Bedroom Duplex Suite,2,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Japan,Group,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.7,Japan,Family with young children,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,6.0,Japan,Business traveler,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,6.0,Japan,Business traveler,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,4.0,Japan,Group,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,7.0,Japan,Couple,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Japan,Business traveler,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.3,Japan,Family with teens,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,7.3,Japan,Family with teens,Unknown,3,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,South Korea,Family with young children,One Bedroom Villa (2 Queen Beds),2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,South Korea,Couple,One Bedroom Duplex Suite (1 King Size Bed),1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.7,China,Family with young children,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,7.3,China,Couple,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.3,China,Family with young children,Unknown,3,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.7,China,Couple,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.7,China,Business traveler,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.7,China,Couple,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Indonesia,Couple,Unknown,3,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Saudi Arabia,Couple,Riverfront One Bedroom Villa (1 King Size Bed),3,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Saudi Arabia,Family with young children,Unknown,2,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.7,Saudi Arabia,Couple,Unknown,2,bali_a,9.1,9.6,0.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Vietnam,Couple,One Bedroom Duplex Suite (1 King Size Bed),1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,6.7,Taiwan,Family with teens,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Taiwan,Solo traveler,Unknown,1,bali_a,9.1,9.6,1.0,1,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.7,Taiwan,Couple,Unknown,1,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.3,Taiwan,Family with teens,Unknown,2,bali_a,9.1,9.6,1.0,0,-0.5,1
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Group,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Family,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,4,bali_b,9.1,9.6,,1,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,bali_b,9.1,9.6,,1,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Group,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.0,Unknown,Family,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Couple,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,6,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,1,bali_b,9.1,9.6,,1,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Group,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Couple,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,bali_b,9.1,9.6,,1,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Family,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Couple,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,7.0,Unknown,Family,Unknown,7,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.0,Unknown,Family,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Family,Unknown,8,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,4.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.0,Unknown,Couple,Unknown,7,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Couple,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,7.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Family,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,1.0,Unknown,Family,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Couple,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,bali_b,9.1,9.6,,1,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Group,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,7,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.0,Unknown,Family,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,5.0,Unknown,Couple,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Couple,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,3,bali_b,9.1,9.6,,1,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Group,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Family,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,3,bali_b,9.1,9.6,,1,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.0,Unknown,Couple,Unknown,6,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,9.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Group,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,8.0,Unknown,Solo traveler,Unknown,6,bali_b,9.1,9.6,,1,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,5,bali_b,9.1,9.6,,0,-0.5,0
+Bali,Four Seasons Resort Bali at Sayan,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,bali_b,9.1,9.6,,0,-0.5,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Thailand,Solo traveler,Sands Premier King Room,2,singapore_a,8.8,9.2,1.0,1,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,8.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,United States,Group,Sands Premier Double Queen Room,3,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.6,Singapore,Family with young children,Sands Premier Double Queen Room,2,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Vietnam,Family with teens,Sands Premier Double Queen City View,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,9.0,Unknown,Group,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.6,Thailand,Couple,Sands Premier King Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,8.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.2,Singapore,Couple,Sands Premier King Room,3,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,South Korea,Family with young children,Sands Premier Double Queen City View,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,9.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Singapore,Family with teens,Sands Premier Double Queen Gardens by the Bay View Room,2,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,9.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.6,Philippines,Solo traveler,Sands Premier King Room,1,singapore_a,8.8,9.2,1.0,1,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,9.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.6,Japan,Family with young children,Sands Premier Double Queen Gardens by the Bay View Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,9.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Australia,Couple,Sands Premier King Room,1,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Australia,Couple,Sands Premier King Room,2,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.6,Indonesia,Group,Sands Premier Double Queen City View,2,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Solo traveler,Unknown,0,singapore_a,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Japan,Couple,Sands Premier Double Queen Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Philippines,Couple,Sands Premier King Gardens by the Bay View Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Thailand,Couple,Sands Premier King Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Japan,Family with young children,Sands Premier King Room,3,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.6,Indonesia,Solo traveler,Sands Premier King Room,2,singapore_a,8.8,9.2,1.0,1,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Solo traveler,Unknown,0,singapore_a,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,United States,Couple,Sands Premier King Room,2,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Singapore,Couple,Sands Premier King Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Indonesia,Family with young children,Sands Premier King Room,2,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,6.4,Vietnam,Couple,Sands Premier King Room,3,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,South Korea,Couple,Sands Premier King Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,United States,Family with teens,Sands Premier King City View,2,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Australia,Family with young children,Sands Premier Double Queen Gardens by the Bay View Room,1,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,8.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,United States,Group,Sands Premier Double Queen Gardens by the Bay View Room,2,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,7.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.2,Singapore,Couple,Sands Premier King Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,South Korea,Couple,Sands Premier King Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Group,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.6,Australia,Family with young children,Sands Premier 2-Bedroom Suite Gardens by the Bay View,1,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,8.0,Unknown,Business traveler,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,United Kingdom,Couple,Sands Premier King Gardens by the Bay View Room,1,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,9.0,Unknown,Solo traveler,Unknown,0,singapore_a,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Australia,Family with young children,Sands Premier Double Queen Gardens by the Bay View Room,1,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Indonesia,Couple,Sands Premier Double Queen Room,2,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.2,United States,Couple,Sands Premier Double Queen Room,2,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,8.4,United States,Couple,Sands Premier Double Queen Room,1,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,United States,Couple,Sands Premier Double Queen Gardens by the Bay View Room,2,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Group,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.6,Philippines,Solo traveler,Sands Premier King City View,4,singapore_a,8.8,9.2,1.0,1,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Solo traveler,Unknown,0,singapore_a,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Philippines,Family with young children,Sands Premier King Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Singapore,Group,Sands Premier King Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Group,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,"Hong Kong SAR, China",Couple,Sands Premier King Gardens by the Bay View Room,1,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,9.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,8.8,Canada,Family with young children,Sands Premier King Room,1,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,1.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Philippines,Group,Sands Premier Double Queen Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,7.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Singapore,Group,Sands Premier King City View,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,United States,Couple,Sands Premier King Room,2,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,8.0,Uruguay,Group,Sands Premier King Gardens by the Bay View Room,1,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Brunei Darussalam,Group,Sands Premier Double Queen City View,1,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Australia,Couple,Sands Premier Studio King Gardens by the Bay View,1,singapore_a,8.8,9.2,0.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,3.0,Unknown,Business traveler,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,8.8,Malaysia,Family with young children,Sands Premier Double Queen City View,3,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,7.0,Unknown,Family with young children,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Japan,Couple,Sands Premier King Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Singapore,Couple,Sands Premier King City View,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Group,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.2,Thailand,Couple,Sands Premier King Gardens by the Bay View Room,1,singapore_a,8.8,9.2,1.0,0,-0.3999999999999986,1
+Singapore,Marina Bay Sands,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,singapore_a,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Group,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,8.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,8.0,Unknown,Group,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,3,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,4,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Group,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.0,Unknown,Group,Unknown,7,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,2,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Group,Unknown,4,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,6,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,8.0,Unknown,Couple,Unknown,6,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.0,Unknown,Family,Unknown,4,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,3,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,8.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.0,Unknown,Couple,Unknown,4,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,5,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Group,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,4,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,4,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,2,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Family,Unknown,6,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,8.0,Unknown,Family,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,3,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,3,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,5,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,7,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,8.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,3,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,4,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,8.0,Unknown,Couple,Unknown,3,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,6.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,7.0,Unknown,Family,Unknown,3,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,2,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,singapore_b,8.8,9.2,,0,-0.3999999999999986,0
+Singapore,Marina Bay Sands,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,1,singapore_b,8.8,9.2,,1,-0.3999999999999986,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.6,Singapore,Business traveler,2 Twin Beds Deluxe,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Booking.com,10.0,Unknown,Group,Unknown,0,tokyo_a,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Japan,Couple,1 King Bed Deluxe,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,tokyo_a,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,South Korea,Family with teens,2 Twin Beds Deluxe,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,tokyo_a,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Indonesia,Family with young children,2 Twin Beds Deluxe,10,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,tokyo_a,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Japan,Couple,2 Twin Beds City View,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Booking.com,10.0,Unknown,Couple,Unknown,0,tokyo_a,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Japan,Group,2 Twin Beds City View,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Booking.com,8.0,Unknown,Family with young children,Unknown,0,tokyo_a,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,France,Couple,Park Suite King,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Booking.com,8.0,Unknown,Solo traveler,Unknown,0,tokyo_a,8.9,9.2,,1,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Qatar,Solo traveler,1 King Bed City View,1,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Booking.com,10.0,Unknown,Family with young children,Unknown,0,tokyo_a,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.2,Taiwan,Solo traveler,1 King Bed Deluxe,1,tokyo_a,8.9,9.2,1.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Booking.com,6.0,Unknown,Solo traveler,Unknown,0,tokyo_a,8.9,9.2,,1,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,United Kingdom,Couple,1 King Bed City View,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Booking.com,8.0,Unknown,Couple,Unknown,0,tokyo_a,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.6,United Kingdom,Couple,1 King Bed City View,3,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Booking.com,5.0,Unknown,Solo traveler,Unknown,0,tokyo_a,8.9,9.2,,1,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Indonesia,Family with teens,2 Twin Beds Deluxe,3,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.6,Thailand,Couple,1 King Bed Deluxe,4,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,6.0,Thailand,Couple,1 King Bed Premier,4,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,United Kingdom,Solo traveler,Unknown,1,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,United States,Couple,1 King Bed City View,3,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.6,Canada,Solo traveler,2 Twin Beds City View,5,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,5.6,Indonesia,Couple,1 King Bed City View,2,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.2,"Hong Kong SAR, China",Family with teens,Unknown,4,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.6,Australia,Couple,Unknown,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Thailand,Business traveler,Unknown,3,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.6,Thailand,Family with young children,1 King Bed City View,3,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.2,Greece,Couple,Unknown,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.2,Japan,Couple,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,4.0,Thailand,Group,2 Twin Beds Deluxe,3,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.8,Malaysia,Family with teens,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Thailand,Business traveler,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,"Hong Kong SAR, China",Business traveler,Unknown,2,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,United States,Solo traveler,2 Twin Beds Deluxe,7,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.6,United States,Solo traveler,2 Twin Beds City View,1,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.2,United States,Solo traveler,Unknown,3,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.2,United States,Couple,Unknown,3,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.6,United States,Business traveler,Unknown,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.8,United States,Couple,Unknown,2,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Australia,Group,Unknown,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.3,United Kingdom,Group,Unknown,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Canada,Couple,Unknown,3,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.7,United States,Couple,Unknown,2,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.7,New Zealand,Couple,Unknown,2,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,United Kingdom,Family with young children,Unknown,2,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,United States,Couple,Unknown,3,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Thailand,Business traveler,Unknown,4,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Thailand,Business traveler,Unknown,4,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,"Hong Kong SAR, China",Couple,Unknown,2,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,6.0,United States,Business traveler,Unknown,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Philippines,Group,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.7,Vietnam,Group,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Thailand,Couple,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.3,Taiwan,Couple,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.7,Singapore,Couple,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Ireland,Couple,Unknown,2,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Australia,Solo traveler,Unknown,6,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.7,Austria,Couple,Unknown,4,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,7.7,Singapore,Business traveler,Unknown,2,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Netherlands,Couple,Unknown,3,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Singapore,Couple,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.3,Australia,Family with young children,Unknown,2,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.7,Singapore,Couple,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.3,Singapore,Couple,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.7,Thailand,Couple,Unknown,2,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.3,Singapore,Couple,Unknown,3,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Japan,Business traveler,Unknown,2,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Singapore,Couple,Unknown,3,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.3,Indonesia,Couple,Unknown,3,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,United States,Couple,Unknown,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,6.3,Indonesia,Family with young children,Unknown,4,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.3,Indonesia,Couple,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.7,Canada,Solo traveler,Unknown,1,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Japan,Family with young children,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.3,Thailand,Couple,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.3,Thailand,Solo traveler,Unknown,1,tokyo_a,8.9,9.2,1.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.7,Indonesia,Business traveler,Unknown,3,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.3,Australia,Solo traveler,Unknown,1,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.7,United States,Couple,Unknown,2,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,5.7,United States,Business traveler,Unknown,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Thailand,Family with young children,Unknown,2,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,"Hong Kong SAR, China",Couple,Unknown,3,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.3,Australia,Solo traveler,Unknown,1,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.3,United States,Solo traveler,Unknown,3,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.3,Saudi Arabia,Solo traveler,Unknown,3,tokyo_a,8.9,9.2,0.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,5.3,Singapore,Solo traveler,Unknown,1,tokyo_a,8.9,9.2,1.0,1,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Singapore,Group,Unknown,4,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.7,Vietnam,Business traveler,Unknown,1,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,7.3,Japan,Group,Unknown,4,tokyo_a,8.9,9.2,1.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.7,"Hong Kong SAR, China",Couple,Unknown,2,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.7,United Kingdom,Couple,Unknown,2,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Australia,Couple,Unknown,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,6.7,"Hong Kong SAR, China",Family with young children,Unknown,4,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,"Hong Kong SAR, China",Couple,Unknown,1,tokyo_a,8.9,9.2,0.0,0,-0.2999999999999989,1
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,5.0,Unknown,Couple,Unknown,10,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Group,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,6,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Family,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,7.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Family,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,7.0,Unknown,Couple,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Family,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Family,Unknown,6,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Solo traveler,Unknown,4,tokyo_b,8.9,9.2,,1,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,6.0,Unknown,Couple,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Family,Unknown,5,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Family,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Family,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Family,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,6.0,Unknown,Solo traveler,Unknown,6,tokyo_b,8.9,9.2,,1,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Group,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Couple,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,6,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,3.0,Unknown,Group,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Family,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,6.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Group,Unknown,5,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,6.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,6,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Couple,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,7.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,4.0,Unknown,Family,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,9,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Couple,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,6,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Family,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,7.0,Unknown,Family,Unknown,6,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,5,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Family,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Family,Unknown,7,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,2,tokyo_b,8.9,9.2,,1,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Family,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Group,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Solo traveler,Unknown,4,tokyo_b,8.9,9.2,,1,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Family,Unknown,3,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,1,tokyo_b,8.9,9.2,,1,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,9.0,Unknown,Solo traveler,Unknown,1,tokyo_b,8.9,9.2,,1,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,6,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Group,Unknown,6,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,4,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,8.0,Unknown,Couple,Unknown,1,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
+Tokyo,Park Hyatt Tokyo,Luxury,Agoda,10.0,Unknown,Couple,Unknown,2,tokyo_b,8.9,9.2,,0,-0.2999999999999989,0
