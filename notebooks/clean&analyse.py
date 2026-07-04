@@ -101,8 +101,13 @@ for city in CITIES:
 reviews = pd.concat(all_reviews, ignore_index=True)
 reviews["review_text"] = reviews["review_text"].str.strip()
 
-# Derived columns
-reviews["is_asian_reviewer"] = reviews["nationality"].isin(ASIAN_COUNTRIES).astype(int)
+# Derived columns# 
+reviews["nationality_known"] = (reviews["nationality"] != "Unknown").astype(int)
+reviews["is_asian_reviewer"] = np.where(
+    reviews["nationality_known"] == 1,
+    reviews["nationality"].isin(ASIAN_COUNTRIES).astype(int),
+    np.nan  # missing nationality is NOT coded as "not Asian"
+)
 reviews["is_solo"] = reviews["trip_type"].str.lower().str.contains("solo").fillna(False).astype(int)
 reviews["score_gap"] = reviews["agoda_agg_score"] - reviews["booking_agg_score"]
 
@@ -144,8 +149,10 @@ for city in CITIES:
         "booking_sample_std":   round(booking_reviews.std(), 2) if len(booking_reviews) > 0 else None,
 
         # Reviewer mix
-        "pct_asian_reviewer":   round(
-                                    df_a["reviewerCountryName"].isin(ASIAN_COUNTRIES).mean() * 100, 1),
+         "pct_asian_reviewer": round(
+             df_a.loc[df_a["reviewerCountryName"].notna(), "reviewerCountryName"]
+             .isin(ASIAN_COUNTRIES).mean() * 100, 1),
+         "pct_nationality_known": round(df_a["reviewerCountryName"].notna().mean() * 100, 1),
         "agoda_review_count":   df_a["agodaReviewsCount"].iloc[0],
         "booking_review_count": df_a["bookingReviewsCount"].iloc[0],
     })
@@ -206,7 +213,8 @@ for city in CITIES:
             "platform":         platform,
             "n_reviews":        len(sub),
             "avg_score":        round(sub["rating"].mean(), 2),
-            "pct_asian":        round(sub["reviewerCountryName"].isin(ASIAN_COUNTRIES).mean() * 100, 1),
+            "pct_asian": round(sub.loc[sub["reviewerCountryName"].notna(), "reviewerCountryName"].isin(ASIAN_COUNTRIES).mean() * 100, 1) if sub["reviewerCountryName"].notna().any() else None,
+            "pct_nationality_known": round(sub["reviewerCountryName"].notna().mean() * 100, 1),
             "pct_couple":       round(sub["reviewerGroupName"].str.lower().str.contains("couple").mean() * 100, 1),
             "pct_solo":         round(sub["reviewerGroupName"].str.lower().str.contains("solo").mean() * 100, 1),
             "pct_family":       round(sub["reviewerGroupName"].str.lower().str.contains("family").mean() * 100, 1),
