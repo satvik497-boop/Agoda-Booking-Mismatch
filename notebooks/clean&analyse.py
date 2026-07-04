@@ -81,7 +81,7 @@ for city in CITIES:
         "tier":        TIERS[city],
         "platform":    "Agoda",
         "score":       pd.to_numeric(df_b["rating"], errors="coerce"),
-        "nationality": df_b["travelerType"].fillna("Unknown") if "travelerType" in df_b.columns else "Unknown",
+        "nationality": "Unknown",  # the _b (Agoda) scraper does not capture reviewer country at all
         "trip_type":   df_b["travelerType"].fillna("Unknown") if "travelerType" in df_b.columns else "Unknown",
         "room_type":   "Unknown",
         "stay_nights": pd.to_numeric(df_b["numberOfNights"], errors="coerce") if "numberOfNights" in df_b.columns else np.nan,
