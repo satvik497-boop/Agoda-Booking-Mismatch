@@ -1,19 +1,13 @@
-/* ═══════════════════════════════════════════════════════════
-   THE TRUST DEFICIT — Stage 2: SAS Analysis
-   H1: Sampling Bias | H2: Prompt Bias | Baseline Gap
-   ═══════════════════════════════════════════════════════════ */
+%let path = /home/u64532522/sasuser.v94;  /* <-- REPLACE with your real path from Properties */
 
 /* ── IMPORTING FILES ── */
-proc import datafile="C:\Users\Satvik Mishra\Desktop\project 2\output\hotel_summary.csv"
+proc import datafile="&path/hotel_summary.csv"
     out=hotel_summary dbms=csv replace; getnames=yes; run;
-
-proc import datafile="C:\Users\Satvik Mishra\Desktop\project 2\output\reviews_clean.csv"
+proc import datafile="&path/reviews_for_sas.csv"
     out=reviews dbms=csv replace; getnames=yes; run;
-
-proc import datafile="C:\Users\Satvik Mishra\Desktop\project 2\output\sub_scores.csv"
+proc import datafile="&path/sub_scores.csv"
     out=sub_scores dbms=csv replace; getnames=yes; run;
-
-proc import datafile="C:\Users\Satvik Mishra\Desktop\project 2\output\reviewer_profile.csv"
+proc import datafile="&path/reviewer_profile.csv"
     out=reviewer_profile dbms=csv replace; getnames=yes; run;
 
 /* ── BASELINE: Confirm the gap is real ── */
@@ -39,7 +33,8 @@ run;
 data reviews_prep;
     set reviews;
     platform_agoda = (platform = "Agoda");
-    asian_reviewer = (is_asian_reviewer = 1);
+    if nationality_known = 1 then asian_reviewer = is_asian_reviewer;
+    /* else leave asian_reviewer missing (.) -- do not code as 0 */
     solo_traveler  = (is_solo = 1);
     city_bali      = (city = "Bali");
     city_singapore = (city = "Singapore");
@@ -52,10 +47,16 @@ proc reg data=reviews_prep;
     title "H1 Model 1: Raw platform effect on score";
 run;
 
+/* NOTE: A "platform effect controlling for reviewer nationality" model is
+   NOT estimable — nationality is 0% known on Booking.com, so the nationality
+   covariate has zero variance on one side of platform_agoda (perfect
+   confounding). H1 cannot be tested as a platform comparison with this data.
+   Instead, we test nationality's effect on score WITHIN Agoda only, where
+   nationality is actually known, as a secondary/exploratory check. */
 proc reg data=reviews_prep;
-    model score = platform_agoda asian_reviewer solo_traveler
-                  city_bali city_singapore;
-    title "H1 Model 2: Platform effect controlling for reviewer demographics";
+    where platform = "Agoda" and nationality_known = 1;
+    model score = asian_reviewer solo_traveler city_bali city_singapore;
+    title "H1 (exploratory, Agoda-only): Does reviewer nationality predict score within Agoda?";
 run;
 
 /* ── H1: REVIEWER MIX COMPARISON ── */
