@@ -1,0 +1,11 @@
+hotel_id,hotel_name,city,tier,agoda_agg_score,booking_agg_score,score_gap,agoda_sample_avg,booking_sample_avg,agoda_sample_n,booking_sample_n,agoda_sample_std,booking_sample_std,pct_asian_reviewer,pct_nationality_known,agoda_review_count,booking_review_count
+4season_bali_atSayan,Four Seasons Resort Bali at Sayan,Bali,Luxury,9.1,9.5,-0.4,9.0,9.48,85,100,1.43,1.31,36.8,100.0,151,151
+st_regis_bali_resort,The St. Regis Bali Resort,Bali,Luxury,9.2,9.7,-0.5,9.39,9.71,100,100,1.04,0.7,47.0,100.0,275,420
+alila_villas_uluwatu,Alila Villas Uluwatu,Bali,Luxury,9.0,9.4,-0.4,9.13,9.24,100,100,1.26,1.83,34.2,99.5,455,180
+marina_bay_sands,Marina Bay Sands,Singapore,Luxury,8.8,9.2,-0.4,9.68,9.58,100,100,0.59,1.05,35.5,100.0,35269,11465
+raffles_singapore,Raffles Singapore,Singapore,Luxury,9.2,9.7,-0.5,9.4,9.81,100,100,1.15,0.56,31.0,100.0,554,390
+mandarin_oriental_singapore,Mandarin Oriental Singapore,Singapore,Luxury,9.0,9.3,-0.3,9.31,8.91,100,100,1.24,2.03,48.0,100.0,1724,896
+Park_Hayatt,Park Hyatt Tokyo,Tokyo,Luxury,8.9,9.3,-0.4,9.01,9.23,100,100,1.18,1.41,29.5,100.0,193,147
+mandarin_oriental_tokyo,Mandarin Oriental Tokyo,Tokyo,Luxury,9.1,9.3,-0.2,9.02,8.83,43,100,1.73,1.97,33.6,100.0,180,539
+the_peninsula,The Peninsula Tokyo,Tokyo,Luxury,9.1,9.3,-0.2,9.35,9.11,100,100,1.03,1.35,44.5,100.0,650,428
+ritz_carlton,The Ritz-Carlton Tokyo,Tokyo,Luxury,8.8,9.2,-0.4,8.99,8.96,96,27,1.47,1.13,69.9,100.0,225,219
