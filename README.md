@@ -5,11 +5,30 @@
 
 ## Key Findings
 
-- Gap is statistically significant: mean = −0.40, p = 0.020, t = −6.93
-- Primary driver is **sampling bias (H1)**: Agoda reviewers are 60.4% 
-  Asian vs. 0% on Booking.com for the same hotels, directly explaining 
-  the two largest sub-score gaps (Location: −0.60, Room Comfort: −0.53)
-- BA revenue model: 2 At-Risk hotels × $3,456/year = **$6,912 annual 
+- A consistent **−0.37 rating gap** was observed across all **10 hotels** 
+  in Bali, Singapore, and Tokyo (paired t-test: t = −11.04, p < .0001, 
+  DF = 9) — a large-sample, statistically robust result, up from an 
+  initial 3-hotel pilot (DF=2)
+- Gap concentrates most in **Room Comfort (−0.41)**, followed by 
+  **Location (−0.37)** and **Staff Performance (−0.33)**; Cleanliness 
+  shows the smallest gap (−0.14)
+- **Sampling bias (H1) — supported**: Agoda's reviewer base is 65.1% 
+  Asian vs. Booking.com's 16.9% (both platforms now have ~100% 
+  nationality data captured). Controlling for hotel and platform via 
+  fixed effects (N=1,850 reviews), reviewer nationality significantly 
+  predicts score (p = 0.027); once nationality is accounted for, 
+  platform itself has no remaining explanatory power (p = 0.89). The 
+  platform-level score gap is best explained by *who* reviews on each 
+  platform, not a platform-caused experience difference
+- **OTA-caused friction (H3) — plausible, not statistically tested**: 
+  review text suggests booking confirmation and check-in issues occur, 
+  but this analysis did not quantitatively test H3 as a driver of the 
+  aggregate gap; it remains a secondary, qualitative hypothesis worth 
+  further investigation independent of the sampling-bias finding above
+- **Secondary finding (H2)**: Booking.com reviews show significantly 
+  higher score variance than Agoda's (Folded F test, p < .0001) — a 
+  separate, confirmed pattern
+- BA revenue model: 7 At-Risk hotels × $3,456/year = **$24,192 annual 
   GMV at risk** from supplier allocation reduction
 
 ## Methodology
@@ -69,7 +88,7 @@
 
 ## Markets
 
-Bali · Singapore · Tokyo — 3 luxury properties across Agoda-stronghold 
+Bali · Singapore · Tokyo — 10 luxury properties across Agoda-stronghold 
 Asian markets
 
 ## Note on Data Collection
