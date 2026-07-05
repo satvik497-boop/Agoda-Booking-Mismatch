@@ -1,0 +1,61 @@
+hotel_id,city,hotel_name,category,agoda_score,booking_score,gap
+4season_bali_atSayan,Bali,Four Seasons Resort Bali at Sayan,cleanliness,9.4,9.6,-0.2
+4season_bali_atSayan,Bali,Four Seasons Resort Bali at Sayan,facilities,9.4,9.6,-0.2
+4season_bali_atSayan,Bali,Four Seasons Resort Bali at Sayan,location,9.2,9.6,-0.4
+4season_bali_atSayan,Bali,Four Seasons Resort Bali at Sayan,roomComfort,9.1,9.7,-0.6
+4season_bali_atSayan,Bali,Four Seasons Resort Bali at Sayan,staffPerformance,9.5,9.7,-0.2
+4season_bali_atSayan,Bali,Four Seasons Resort Bali at Sayan,valueForMoney,8.7,9.0,-0.3
+st_regis_bali_resort,Bali,The St. Regis Bali Resort,cleanliness,9.6,9.8,-0.2
+st_regis_bali_resort,Bali,The St. Regis Bali Resort,facilities,9.4,9.7,-0.3
+st_regis_bali_resort,Bali,The St. Regis Bali Resort,location,9.3,9.8,-0.5
+st_regis_bali_resort,Bali,The St. Regis Bali Resort,roomComfort,9.6,9.8,-0.2
+st_regis_bali_resort,Bali,The St. Regis Bali Resort,staffPerformance,9.6,10.0,-0.4
+st_regis_bali_resort,Bali,The St. Regis Bali Resort,valueForMoney,8.8,9.1,-0.3
+alila_villas_uluwatu,Bali,Alila Villas Uluwatu,cleanliness,9.5,9.7,-0.2
+alila_villas_uluwatu,Bali,Alila Villas Uluwatu,facilities,9.3,9.6,-0.3
+alila_villas_uluwatu,Bali,Alila Villas Uluwatu,location,8.6,9.3,-0.7
+alila_villas_uluwatu,Bali,Alila Villas Uluwatu,roomComfort,9.3,9.7,-0.4
+alila_villas_uluwatu,Bali,Alila Villas Uluwatu,staffPerformance,9.5,9.7,-0.2
+alila_villas_uluwatu,Bali,Alila Villas Uluwatu,valueForMoney,8.4,8.7,-0.3
+marina_bay_sands,Singapore,Marina Bay Sands,cleanliness,9.3,9.5,-0.2
+marina_bay_sands,Singapore,Marina Bay Sands,facilities,9.3,9.4,-0.1
+marina_bay_sands,Singapore,Marina Bay Sands,location,9.2,9.6,-0.4
+marina_bay_sands,Singapore,Marina Bay Sands,roomComfort,8.6,9.5,-0.9
+marina_bay_sands,Singapore,Marina Bay Sands,staffPerformance,9.0,9.4,-0.4
+marina_bay_sands,Singapore,Marina Bay Sands,valueForMoney,8.0,8.0,0.0
+raffles_singapore,Singapore,Raffles Singapore,cleanliness,9.5,9.9,-0.4
+raffles_singapore,Singapore,Raffles Singapore,facilities,9.3,9.8,-0.5
+raffles_singapore,Singapore,Raffles Singapore,location,9.4,9.8,-0.4
+raffles_singapore,Singapore,Raffles Singapore,roomComfort,9.3,9.9,-0.6
+raffles_singapore,Singapore,Raffles Singapore,staffPerformance,9.4,9.8,-0.4
+raffles_singapore,Singapore,Raffles Singapore,valueForMoney,8.6,8.8,-0.2
+mandarin_oriental_singapore,Singapore,Mandarin Oriental Singapore,cleanliness,9.4,9.5,-0.1
+mandarin_oriental_singapore,Singapore,Mandarin Oriental Singapore,facilities,9.1,9.4,-0.3
+mandarin_oriental_singapore,Singapore,Mandarin Oriental Singapore,location,9.3,9.5,-0.2
+mandarin_oriental_singapore,Singapore,Mandarin Oriental Singapore,roomComfort,9.3,9.6,-0.3
+mandarin_oriental_singapore,Singapore,Mandarin Oriental Singapore,staffPerformance,8.7,9.4,-0.7
+mandarin_oriental_singapore,Singapore,Mandarin Oriental Singapore,valueForMoney,,8.6,
+Park_Hayatt,Tokyo,Park Hyatt Tokyo,cleanliness,9.6,9.7,-0.1
+Park_Hayatt,Tokyo,Park Hyatt Tokyo,facilities,9.2,9.3,-0.1
+Park_Hayatt,Tokyo,Park Hyatt Tokyo,location,8.3,9.1,-0.8
+Park_Hayatt,Tokyo,Park Hyatt Tokyo,roomComfort,9.5,9.7,-0.2
+Park_Hayatt,Tokyo,Park Hyatt Tokyo,staffPerformance,9.4,9.3,0.1
+Park_Hayatt,Tokyo,Park Hyatt Tokyo,valueForMoney,8.1,8.7,-0.6
+mandarin_oriental_tokyo,Tokyo,Mandarin Oriental Tokyo,cleanliness,9.6,9.6,0.0
+mandarin_oriental_tokyo,Tokyo,Mandarin Oriental Tokyo,facilities,9.2,9.4,-0.2
+mandarin_oriental_tokyo,Tokyo,Mandarin Oriental Tokyo,location,9.5,9.4,0.1
+mandarin_oriental_tokyo,Tokyo,Mandarin Oriental Tokyo,roomComfort,9.5,9.7,-0.2
+mandarin_oriental_tokyo,Tokyo,Mandarin Oriental Tokyo,staffPerformance,8.9,9.5,-0.6
+mandarin_oriental_tokyo,Tokyo,Mandarin Oriental Tokyo,valueForMoney,,8.6,
+the_peninsula,Tokyo,The Peninsula Tokyo,cleanliness,9.6,9.6,0.0
+the_peninsula,Tokyo,The Peninsula Tokyo,facilities,9.3,9.3,0.0
+the_peninsula,Tokyo,The Peninsula Tokyo,location,9.5,9.6,-0.1
+the_peninsula,Tokyo,The Peninsula Tokyo,roomComfort,9.5,9.6,-0.1
+the_peninsula,Tokyo,The Peninsula Tokyo,staffPerformance,9.3,9.6,-0.3
+the_peninsula,Tokyo,The Peninsula Tokyo,valueForMoney,8.6,8.5,0.1
+ritz_carlton,Tokyo,The Ritz-Carlton Tokyo,cleanliness,9.4,9.4,0.0
+ritz_carlton,Tokyo,The Ritz-Carlton Tokyo,facilities,9.0,9.3,-0.3
+ritz_carlton,Tokyo,The Ritz-Carlton Tokyo,location,9.1,9.4,-0.3
+ritz_carlton,Tokyo,The Ritz-Carlton Tokyo,roomComfort,8.9,9.5,-0.6
+ritz_carlton,Tokyo,The Ritz-Carlton Tokyo,staffPerformance,9.2,9.4,-0.2
+ritz_carlton,Tokyo,The Ritz-Carlton Tokyo,valueForMoney,8.2,8.1,0.1
