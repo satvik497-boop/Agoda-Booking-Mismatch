@@ -35,7 +35,7 @@
 
 | Step | Tool | Output |
 |------|------|--------|
-| Hotel selection | Manual seed (50 verified hotels) | `data/hotel_summary.csv` |
+| Hotel selection | Manual seed (10 verified luxury hotels) | `data/hotel_summary.csv` |
 | Review scraping | Apify (Agoda + Booking.com) | Raw review CSVs |
 | Data cleaning | Python (pandas) | 4 analysis-ready CSVs |
 | Statistical analysis | SAS Studio | Paired t-test, regression, variance test |
