@@ -1,4 +1,0 @@
-hotel_name,city,tier,agoda_agg_score,booking_agg_score,score_gap,agoda_sample_avg,booking_sample_avg,agoda_sample_n,booking_sample_n,agoda_sample_std,booking_sample_std,pct_asian_reviewer,agoda_review_count,booking_review_count,pct_nationality_known
-Four Seasons Resort Bali at Sayan,Bali,Luxury,9.1,9.6,-0.5,8.99,9.59,83,17,1.42,0.71,69.9,151,153,83.0
-Marina Bay Sands,Singapore,Luxury,8.8,9.2,-0.4,9.68,9.2,50,50,0.66,1.74,62.0,35178,11465,50.0
-Park Hyatt Tokyo,Tokyo,Luxury,8.9,9.2,-0.3,8.97,8.64,89,11,1.23,1.8,49.4,191,148,89.0
