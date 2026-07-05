@@ -1,239 +1,159 @@
 """
-The Trust Deficit — Data Cleaning + Analysis Ready Output
-Inputs:  bali_a.csv, singapore_a.csv, tokyo_a.csv  (Booking scraper - has both platforms)
-         bali_b.csv, singapore_b.csv, tokyo_b.csv  (Agoda scraper - Agoda-only reviews)
-Outputs: reviews_clean.csv      — review-level, SAS-ready
-         hotel_summary.csv      — hotel-level scores + gap
-         sub_scores.csv         — sub-score breakdown by category
-         reviewer_profile.csv   — nationality + trip type breakdown
+The Trust Deficit — Data Cleaning + Analysis (v3: 10 hotels, new schema)
+Inputs:  {hotel_id}_a.csv  (Agoda-only reviews, via Fast Agoda Reviews Scraper)
+         {hotel_id}_b.csv  (Booking.com-only reviews, via Booking Reviews Scraper)
+Outputs: reviews_clean.csv, hotel_summary.csv, sub_scores.csv, reviewer_profile.csv
 """
 
 import pandas as pd
 import numpy as np
 import os
 
-# ── CONFIG ────────
-DATA_DIR = "." 
+DATA_DIR = "."
 OUT_DIR  = "output"
 os.makedirs(OUT_DIR, exist_ok=True)
 
-CITIES = ["bali", "singapore", "tokyo"]
+HOTELS = [
+    {"id": "4season_bali_atSayan",        "city": "Bali",      "hotel_name": "Four Seasons Resort Bali at Sayan", "tier": "Luxury"},
+    {"id": "st_regis_bali_resort",        "city": "Bali",      "hotel_name": "The St. Regis Bali Resort",          "tier": "Luxury"},
+    {"id": "alila_villas_uluwatu",        "city": "Bali",      "hotel_name": "Alila Villas Uluwatu",                "tier": "Luxury"},
+    {"id": "marina_bay_sands",            "city": "Singapore", "hotel_name": "Marina Bay Sands",                    "tier": "Luxury"},
+    {"id": "raffles_singapore",           "city": "Singapore", "hotel_name": "Raffles Singapore",                   "tier": "Luxury"},
+    {"id": "mandarin_oriental_singapore", "city": "Singapore", "hotel_name": "Mandarin Oriental Singapore",         "tier": "Luxury"},
+    {"id": "Park_Hayatt",                 "city": "Tokyo",      "hotel_name": "Park Hyatt Tokyo",                    "tier": "Luxury"},
+    {"id": "mandarin_oriental_tokyo",     "city": "Tokyo",      "hotel_name": "Mandarin Oriental Tokyo",             "tier": "Luxury"},
+    {"id": "the_peninsula",               "city": "Tokyo",      "hotel_name": "The Peninsula Tokyo",                 "tier": "Luxury"},
+    {"id": "ritz_carlton",                "city": "Tokyo",      "hotel_name": "The Ritz-Carlton Tokyo",              "tier": "Luxury"},
+]
 
-HOTEL_NAMES = {
-    "bali":      "Four Seasons Resort Bali at Sayan",
-    "singapore": "Marina Bay Sands",
-    "tokyo":     "Park Hyatt Tokyo",
-}
-
-TIERS = {
-    "bali":      "Luxury",
-    "singapore": "Luxury",
-    "tokyo":     "Luxury",
-}
-
-# Asian vs Western nationality classification for H1
 ASIAN_COUNTRIES = {
     "Japan", "China", "South Korea", "Indonesia", "Singapore",
     "Thailand", "Malaysia", "India", "Philippines", "Vietnam",
     "Taiwan", "Hong Kong", "Cambodia", "Myanmar", "Bangladesh"
 }
 
-# ── STEP 1: BUILDING REVIEW-LEVEL DATASET ──────────────────────────
+SUBSCORE_CATS = ["cleanliness", "facilities", "location", "roomComfort", "staffPerformance", "valueForMoney"]
 
-all_reviews = []
+all_reviews, hotel_rows, sub_rows, profile_rows = [], [], [], []
 
-for city in CITIES:
-    print(f"\nProcessing {city}...")
+for hotel in HOTELS:
+    hid, city, hotel_name, tier = hotel["id"], hotel["city"], hotel["hotel_name"], hotel["tier"]
+    print(f"Processing {hotel_name} ({city})...")
 
-    # ── _a file: Booking scraper (has both Agoda + Booking reviews) ──
-    df_a = pd.read_csv(f"{DATA_DIR}/{city}_a.csv")
+    df_a = pd.read_csv(f"{DATA_DIR}/{hid}_a.csv")   # Agoda-only reviews
+    df_b = pd.read_csv(f"{DATA_DIR}/{hid}_b.csv")   # Booking.com-only reviews
 
-    # Extract aggregate scores (same for all rows in this hotel)
     agoda_agg   = df_a["agodaAggregateReviewScore"].iloc[0]
     booking_agg = df_a["bookingAggregateReviewScore"].iloc[0]
 
-    # Clean review-level columns
-    df_a_clean = pd.DataFrame({
-        "city":        city.title(),
-        "hotel_name":  HOTEL_NAMES[city],
-        "tier":        TIERS[city],
-        "platform":    df_a["reviewProviderText"].str.strip(),
-        "score":       pd.to_numeric(df_a["rating"], errors="coerce"),
+    # ── review-level: Agoda rows ──
+    a_clean = pd.DataFrame({
+        "city": city, "hotel_name": hotel_name, "tier": tier, "hotel_id": hid,
+        "platform": "Agoda",
+        "score": pd.to_numeric(df_a["rating"], errors="coerce"),
         "nationality": df_a["reviewerCountryName"].fillna("Unknown"),
-        "trip_type":   df_a["reviewerGroupName"].fillna("Unknown"),
-        "room_type":   df_a["reviewerRoomTypeName"].fillna("Unknown"),
+        "trip_type": df_a["reviewerGroupName"].fillna("Unknown"),
+        "room_type": df_a["reviewerRoomTypeName"].fillna("Unknown"),
         "stay_nights": pd.to_numeric(df_a["reviewerLengthOfStay"], errors="coerce"),
-        "review_text": df_a["reviewComments"].fillna("") + " " +
-                       df_a["reviewPositives"].fillna("") + " " +
-                       df_a["reviewNegatives"].fillna(""),
-        "review_date": df_a["reviewDate"],
-        "source_file": f"{city}_a",
-        "agoda_agg_score":   agoda_agg,
-        "booking_agg_score": booking_agg,
+        "source_file": f"{hid}_a",
+        "agoda_agg_score": agoda_agg, "booking_agg_score": booking_agg,
     })
 
-    # ── _b file: Agoda scraper (Agoda-only reviews, richer text) ──
-    df_b = pd.read_csv(f"{DATA_DIR}/{city}_b.csv")
-
-    df_b_clean = pd.DataFrame({
-        "city":        city.title(),
-        "hotel_name":  HOTEL_NAMES[city],
-        "tier":        TIERS[city],
-        "platform":    "Agoda",
-        "score":       pd.to_numeric(df_b["rating"], errors="coerce"),
-        "nationality": "Unknown",  # the _b (Agoda) scraper does not capture reviewer country at all
-        "trip_type":   df_b["travelerType"].fillna("Unknown") if "travelerType" in df_b.columns else "Unknown",
-        "room_type":   "Unknown",
-        "stay_nights": pd.to_numeric(df_b["numberOfNights"], errors="coerce") if "numberOfNights" in df_b.columns else np.nan,
-        "review_text": df_b["likedText"].fillna("") + " " + df_b["dislikedText"].fillna(""),
-        "review_date": df_b["reviewDate"] if "reviewDate" in df_b.columns else np.nan,
-        "source_file": f"{city}_b",
-        "agoda_agg_score":   agoda_agg,
-        "booking_agg_score": booking_agg,
+    # ── review-level: Booking.com rows (now with REAL nationality via userLocation) ──
+    b_clean = pd.DataFrame({
+        "city": city, "hotel_name": hotel_name, "tier": tier, "hotel_id": hid,
+        "platform": "Booking.com",
+        "score": pd.to_numeric(df_b["rating"], errors="coerce"),
+        "nationality": df_b["userLocation"].fillna("Unknown"),
+        "trip_type": df_b["travelerType"].fillna("Unknown"),
+        "room_type": df_b["roomInfo"].fillna("Unknown") if "roomInfo" in df_b.columns else "Unknown",
+        "stay_nights": pd.to_numeric(df_b["numberOfNights"], errors="coerce"),
+        "source_file": f"{hid}_b",
+        "agoda_agg_score": agoda_agg, "booking_agg_score": booking_agg,
     })
 
-    all_reviews.append(df_a_clean)
-    all_reviews.append(df_b_clean)
+    all_reviews.append(a_clean)
+    all_reviews.append(b_clean)
 
-    print(f"  _a: {len(df_a_clean)} reviews | Agoda agg: {agoda_agg} | Booking agg: {booking_agg}")
-    print(f"  _b: {len(df_b_clean)} reviews")
+    # ── hotel_summary row ──
+    a_score = pd.to_numeric(df_a["rating"], errors="coerce")
+    b_score = pd.to_numeric(df_b["rating"], errors="coerce")
+    all_nat = pd.concat([df_a["reviewerCountryName"], df_b["userLocation"]])
+    known_nat = all_nat.dropna()
 
+    hotel_rows.append({
+        "hotel_id": hid, "hotel_name": hotel_name, "city": city, "tier": tier,
+        "agoda_agg_score": agoda_agg, "booking_agg_score": booking_agg,
+        "score_gap": round(agoda_agg - booking_agg, 2),
+        "agoda_sample_avg": round(a_score.mean(), 2), "booking_sample_avg": round(b_score.mean(), 2),
+        "agoda_sample_n": len(df_a), "booking_sample_n": len(df_b),
+        "agoda_sample_std": round(a_score.std(), 2), "booking_sample_std": round(b_score.std(), 2),
+        "pct_asian_reviewer": round(known_nat.isin(ASIAN_COUNTRIES).mean() * 100, 1) if len(known_nat) else None,
+        "pct_nationality_known": round(len(known_nat) / len(all_nat) * 100, 1),
+        "agoda_review_count": df_a["agodaReviewsCount"].iloc[0],
+        "booking_review_count": df_a["bookingReviewsCount"].iloc[0],
+    })
+
+    # ── sub_scores rows (from Agoda file, which carries both platforms' aggregate sub-scores) ──
+    row0 = df_a.iloc[0]
+    for i, cat in enumerate(SUBSCORE_CATS):
+        ags = row0.get(f"agodaAggregateDetailedReviewScore/{i}/score")
+        bks = row0.get(f"bookingAggregateDetailedReviewScore/{i}/score")
+        sub_rows.append({
+            "hotel_id": hid, "city": city, "hotel_name": hotel_name, "category": cat,
+            "agoda_score": ags, "booking_score": bks,
+            "gap": round(float(ags) - float(bks), 2) if pd.notna(ags) and pd.notna(bks) else None,
+        })
+
+    # ── reviewer_profile rows ──
+    profile_rows.append({
+        "hotel_id": hid, "city": city, "platform": "Agoda", "n_reviews": len(df_a),
+        "avg_score": round(a_score.mean(), 2),
+        "pct_asian": round(df_a["reviewerCountryName"].dropna().isin(ASIAN_COUNTRIES).mean() * 100, 1) if df_a["reviewerCountryName"].notna().any() else None,
+        "pct_nationality_known": round(df_a["reviewerCountryName"].notna().mean() * 100, 1),
+        "pct_couple": round(df_a["reviewerGroupName"].str.lower().str.contains("couple", na=False).mean() * 100, 1),
+        "pct_solo": round(df_a["reviewerGroupName"].str.lower().str.contains("solo", na=False).mean() * 100, 1),
+        "pct_family": round(df_a["reviewerGroupName"].str.lower().str.contains("family", na=False).mean() * 100, 1),
+        "pct_business": round(df_a["reviewerGroupName"].str.lower().str.contains("business", na=False).mean() * 100, 1),
+        "avg_stay_nights": round(pd.to_numeric(df_a["reviewerLengthOfStay"], errors="coerce").mean(), 1),
+        "score_std": round(a_score.std(), 2),
+    })
+    profile_rows.append({
+        "hotel_id": hid, "city": city, "platform": "Booking.com", "n_reviews": len(df_b),
+        "avg_score": round(b_score.mean(), 2),
+        "pct_asian": round(df_b["userLocation"].dropna().isin(ASIAN_COUNTRIES).mean() * 100, 1) if df_b["userLocation"].notna().any() else None,
+        "pct_nationality_known": round(df_b["userLocation"].notna().mean() * 100, 1),
+        "pct_couple": round(df_b["travelerType"].str.lower().str.contains("couple", na=False).mean() * 100, 1),
+        "pct_solo": round(df_b["travelerType"].str.lower().str.contains("solo", na=False).mean() * 100, 1),
+        "pct_family": round(df_b["travelerType"].str.lower().str.contains("family", na=False).mean() * 100, 1),
+        "pct_business": round(df_b["travelerType"].str.lower().str.contains("business", na=False).mean() * 100, 1),
+        "avg_stay_nights": round(pd.to_numeric(df_b["numberOfNights"], errors="coerce").mean(), 1),
+        "score_std": round(b_score.std(), 2),
+    })
+
+# ── finalize reviews_clean ──
 reviews = pd.concat(all_reviews, ignore_index=True)
-reviews["review_text"] = reviews["review_text"].str.strip()
-
-# Derived columns# 
 reviews["nationality_known"] = (reviews["nationality"] != "Unknown").astype(int)
 reviews["is_asian_reviewer"] = np.where(
     reviews["nationality_known"] == 1,
     reviews["nationality"].isin(ASIAN_COUNTRIES).astype(int),
-    np.nan  # missing nationality is NOT coded as "not Asian"
+    np.nan
 )
-reviews["is_solo"] = reviews["trip_type"].str.lower().str.contains("solo").fillna(False).astype(int)
+reviews["is_solo"] = reviews["trip_type"].str.lower().str.contains("solo", na=False).astype(int)
 reviews["score_gap"] = reviews["agoda_agg_score"] - reviews["booking_agg_score"]
-
-print(f"\nTotal reviews: {len(reviews)}")
-print(f"Platform breakdown:\n{reviews['platform'].value_counts()}")
-
 reviews.to_csv(f"{OUT_DIR}/reviews_clean.csv", index=False)
-print(f"\nSaved reviews_clean.csv")
 
-# ── STEP 2: HOTEL SUMMARY TABLE ──────────────────────────────────
-
-hotel_summary = pd.DataFrame()
-
-rows = []
-for city in CITIES:
-    df_a = pd.read_csv(f"{DATA_DIR}/{city}_a.csv")
-
-    agoda_reviews   = df_a[df_a["reviewProviderText"] == "Agoda"]["rating"]
-    booking_reviews = df_a[df_a["reviewProviderText"] == "Booking.com"]["rating"]
-
-    rows.append({
-        "hotel_name":           HOTEL_NAMES[city],
-        "city":                 city.title(),
-        "tier":                 TIERS[city],
-
-        # Aggregate scores (platform-level)
-        "agoda_agg_score":      df_a["agodaAggregateReviewScore"].iloc[0],
-        "booking_agg_score":    df_a["bookingAggregateReviewScore"].iloc[0],
-        "score_gap":            round(
-                                    df_a["agodaAggregateReviewScore"].iloc[0] -
-                                    df_a["bookingAggregateReviewScore"].iloc[0], 2),
-
-        # Sample-level averages from scraped reviews
-        "agoda_sample_avg":     round(agoda_reviews.mean(), 2) if len(agoda_reviews) > 0 else None,
-        "booking_sample_avg":   round(booking_reviews.mean(), 2) if len(booking_reviews) > 0 else None,
-        "agoda_sample_n":       len(agoda_reviews),
-        "booking_sample_n":     len(booking_reviews),
-        "agoda_sample_std":     round(agoda_reviews.std(), 2) if len(agoda_reviews) > 0 else None,
-        "booking_sample_std":   round(booking_reviews.std(), 2) if len(booking_reviews) > 0 else None,
-
-        # Reviewer mix
-         "pct_asian_reviewer": round(
-             df_a.loc[df_a["reviewerCountryName"].notna(), "reviewerCountryName"]
-             .isin(ASIAN_COUNTRIES).mean() * 100, 1),
-         "pct_nationality_known": round(df_a["reviewerCountryName"].notna().mean() * 100, 1),
-        "agoda_review_count":   df_a["agodaReviewsCount"].iloc[0],
-        "booking_review_count": df_a["bookingReviewsCount"].iloc[0],
-    })
-
-hotel_summary = pd.DataFrame(rows)
+hotel_summary = pd.DataFrame(hotel_rows)
 hotel_summary.to_csv(f"{OUT_DIR}/hotel_summary.csv", index=False)
-
-print("\n=== HOTEL SUMMARY ===")
-print(hotel_summary[["hotel_name", "city", "agoda_agg_score",
-                      "booking_agg_score", "score_gap"]].to_string(index=False))
-
-# ── STEP 3: SUB-SCORE BREAKDOWN ──────────────────────────────────
-
-sub_rows = []
-categories = ["cleanliness", "facilities", "location",
-              "roomComfort", "staffPerformance", "valueForMoney"]
-
-for city in CITIES:
-    df_a = pd.read_csv(f"{DATA_DIR}/{city}_a.csv")
-    row = df_a.iloc[0]
-
-    for i, cat in enumerate(categories):
-        agoda_score   = row.get(f"agodaAggregateDetailedReviewScore/{i}/score", None)
-        booking_score = row.get(f"bookingAggregateDetailedReviewScore/{i}/score", None)
-
-        sub_rows.append({
-            "city":          city.title(),
-            "hotel_name":    HOTEL_NAMES[city],
-            "category":      cat,
-            "agoda_score":   agoda_score,
-            "booking_score": booking_score,
-            "gap":           round(float(agoda_score) - float(booking_score), 2)
-                             if agoda_score and booking_score else None,
-        })
 
 sub_scores = pd.DataFrame(sub_rows)
 sub_scores.to_csv(f"{OUT_DIR}/sub_scores.csv", index=False)
 
-print("\n=== SUB-SCORE GAPS (Agoda - Booking) ===")
-pivot = sub_scores.pivot_table(
-    values="gap", index="category", columns="city", aggfunc="mean"
-)
-print(pivot.round(2).to_string())
-
-# ── STEP 4: REVIEWER PROFILE ──────────────────────────────────────
-
-profile_rows = []
-for city in CITIES:
-    df_a = pd.read_csv(f"{DATA_DIR}/{city}_a.csv")
-
-    for platform in ["Agoda", "Booking.com"]:
-        sub = df_a[df_a["reviewProviderText"] == platform]
-        if len(sub) == 0:
-            continue
-
-        profile_rows.append({
-            "city":             city.title(),
-            "platform":         platform,
-            "n_reviews":        len(sub),
-            "avg_score":        round(sub["rating"].mean(), 2),
-            "pct_asian": round(sub.loc[sub["reviewerCountryName"].notna(), "reviewerCountryName"].isin(ASIAN_COUNTRIES).mean() * 100, 1) if sub["reviewerCountryName"].notna().any() else None,
-            "pct_nationality_known": round(sub["reviewerCountryName"].notna().mean() * 100, 1),
-            "pct_couple":       round(sub["reviewerGroupName"].str.lower().str.contains("couple").mean() * 100, 1),
-            "pct_solo":         round(sub["reviewerGroupName"].str.lower().str.contains("solo").mean() * 100, 1),
-            "pct_family":       round(sub["reviewerGroupName"].str.lower().str.contains("family").mean() * 100, 1),
-            "pct_business":     round(sub["reviewerGroupName"].str.lower().str.contains("business").mean() * 100, 1),
-            "avg_stay_nights":  round(pd.to_numeric(sub["reviewerLengthOfStay"], errors="coerce").mean(), 1),
-            "score_std":        round(sub["rating"].std(), 2),
-        })
-
 reviewer_profile = pd.DataFrame(profile_rows)
 reviewer_profile.to_csv(f"{OUT_DIR}/reviewer_profile.csv", index=False)
 
-print("\n=== REVIEWER PROFILE ===")
-print(reviewer_profile[["city", "platform", "n_reviews",
-                         "avg_score", "pct_asian", "pct_solo",
-                         "pct_couple"]].to_string(index=False))
-
-print(f"\n✅ All done. Output files in '{OUT_DIR}/':")
-print("   reviews_clean.csv")
-print("   hotel_summary.csv")
-print("   sub_scores.csv")
-print("   reviewer_profile.csv")
-print("\nNext step: import these into SAS for H1/H2/H3 analysis")
+print(f"\nTotal reviews: {len(reviews)}")
+print(f"Nationality known: {reviews['nationality_known'].sum()} / {len(reviews)} ({reviews['nationality_known'].mean()*100:.1f}%)")
+print("\n=== HOTEL SUMMARY ===")
+print(hotel_summary[["hotel_name","city","agoda_agg_score","booking_agg_score","score_gap"]].to_string(index=False))
+print("\nDone.")
